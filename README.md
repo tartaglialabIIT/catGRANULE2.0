@@ -2,14 +2,26 @@
 This repository contains the code needed to reproduce the analysis in the manuscript [Monti*, Fiorentino*, et al, Accurate Predictions of Liquid-Liquid Phase Separating Proteins
 at Single Amino Acid Resolution, biorxiv, 2024](url).
 
+Setup a python or a conda virtual environment using the file requirements.txt
 
+The folder DATASETS contains the training and test datasets used in our manuscript. 
 
-Model training
-Model validation
-- Other predictors
-- Species
-- Condensates
-- Immunofluorescence microscopy images
+The script training_catGRANULE2.py can be used to reproduce the training of the classifiers, it can be used using the command:
 
-LLPS propensity profiles
-Mutations affecting LLPS propensity
+f="./DATASETS/"
+python training_catGRANULE2.py --dataID catGRANULE2 --labels ${f}TrainSet_IDs.csv --data ${f}TrainSet_data.csv --test ${f}TestSet_data.csv
+
+The computation of the ROC curves and the comparison of the performance with other LLPS predictors on the independent test dataset are in the Jupyter notebook Comparison_other_predictors.ipynb.
+
+The folder Condensates_Analysis contains the code needed to reproduce the results of catGRANULE 2.0 ROBOT on different subcellular compartments.
+
+The folder Recursive_Feature_Elimination contains the code for the analysis of the performance and the features selected upon recursive feature elimination and model re-training.
+
+The folder Analysis_HPA_images contains the CellProfiler4 custom pipeline and the codes needed to perform the segmentation and the analysis of immunofluorescence confocal microscopy images retrieved from the Human Protein Atlas.
+
+The Jupyter notebook trialNotebook.ipynb illustrates the usage of the catGRANULE 2.0 ROBOT algorithm with different inputs, from fasta or pdb files. It makes use of functions contained in the scripts stringScalesFunctions.py, compute_profiles_and_predictions.py, catgranuleFunctions.py; helper files contained in the folder ChemicalPhysicalScales_Py_dictionary and example files from the examples folder.
+
+The folder src contained the trained classifiers and helper files needed in the various analyses.
+
+If you use our method please cite:
+Add reference
