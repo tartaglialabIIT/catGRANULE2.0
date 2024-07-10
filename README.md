@@ -1,4 +1,8 @@
 # catGRANULE2.0
+
+![FIGURE1](https://github.com/tartaglialabIIT/catGRANULE2.0/assets/54023927/64f994b6-2a91-48a4-8043-e75caab809a1)
+
+
 This repository contains the code needed to reproduce the analysis in the manuscript [Monti*, Fiorentino*, et al, Accurate Predictions of Liquid-Liquid Phase Separating Proteins
 at Single Amino Acid Resolution, biorxiv, 2024](url).
 
@@ -7,10 +11,10 @@ Setup a python or a conda virtual environment using the file requirements.txt
 The folder DATASETS contains the training and test datasets used in our manuscript. 
 
 The script training_catGRANULE2.py can be used to reproduce the training of the classifiers, it can be used using the command:
-
+```
 f="./DATASETS/"
 python training_catGRANULE2.py --dataID catGRANULE2 --labels ${f}TrainSet_IDs.csv --data ${f}TrainSet_data.csv --test ${f}TestSet_data.csv
-
+```
 The computation of the ROC curves and the comparison of the performance with other LLPS predictors on the independent test dataset are in the Jupyter notebook Comparison_other_predictors.ipynb.
 
 The folder Condensates_Analysis contains the code needed to reproduce the results of catGRANULE 2.0 ROBOT on different subcellular compartments.
