@@ -1,0 +1,1 @@
+/^ATOM/ && index($3, "CA") == 1 {print $(NF-1)}
