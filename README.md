@@ -4,7 +4,7 @@
 
 
 This repository contains the code needed to reproduce the analysis in the manuscript [Monti*, Fiorentino*, et al, Accurate Predictions of Liquid-Liquid Phase Separating Proteins
-at Single Amino Acid Resolution, biorxiv, 2024](url).
+at Single Amino Acid Resolution, biorxiv, 2024](https://www.biorxiv.org/content/10.1101/2024.07.19.602785v1).
 
 Setup a python or a conda virtual environment using the file requirements.txt
 
@@ -28,4 +28,13 @@ The Jupyter notebook trialNotebook.ipynb illustrates the usage of the catGRANULE
 The folder src contained the trained classifiers and helper files needed in the various analyses.
 
 If you use our method please cite:
-Add reference
+```
+@article{monti2024accurate,
+  title={Accurate Predictions of Phase Separating Proteins at Single Amino Acid Resolution},
+  author={Monti, Michele and Fiorentino, Jonathan and Vrachnos, Dimitrios and Bini, Giorgio and Cotrufo, Tiziana and Sanchez, Natalia and Armaos, Alexandros and Tartaglia, Gian Gaetano},
+  journal={bioRxiv},
+  pages={2024--07},
+  year={2024},
+  publisher={Cold Spring Harbor Laboratory}
+}
+```
