@@ -39,15 +39,15 @@ import argparse
 
 def get_parser() -> argparse.ArgumentParser:
 
-    parser = argparse.ArgumentParser(description='Run catGRANULE2 training.')
+    parser = argparse.ArgumentParser(description='Run catGRANULE 2.0 ROBOT training.')
     
-    parser.add_argument('--dataID', default='MyData',help='Name of the dataset')
+    parser.add_argument('--dataID', default='MyData',help='Identifier of the dataset')
         
-    parser.add_argument('--labels', default='',help='Path to file with labels of the training dataset')
+    parser.add_argument('--labels', default='',help='Path to file with labels of the training dataset (csv file)')
 
-    parser.add_argument('--data', default='',help='Path to file with the training dataset')
+    parser.add_argument('--data', default='',help='Path to file with the training dataset (csv file with proteins x features)')
                         
-    parser.add_argument('--test', default='',help='Path to file with the training dataset')
+    parser.add_argument('--test', default='',help='Path to file with the test dataset (csv file with proteins x features)')
 
     return parser
 
