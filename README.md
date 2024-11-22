@@ -3,6 +3,9 @@
 ![FIGURE1](https://github.com/tartaglialabIIT/catGRANULE2.0/assets/54023927/64f994b6-2a91-48a4-8043-e75caab809a1)
 
 
+[![DOI](https://zenodo.org/badge/823137800.svg)](https://doi.org/10.5281/zenodo.14205831)
+
+
 This repository contains the code needed to reproduce the analysis in the manuscript [Monti*, Fiorentino*, et al, Accurate Predictions of Liquid-Liquid Phase Separating Proteins
 at Single Amino Acid Resolution, biorxiv, 2024](https://www.biorxiv.org/content/10.1101/2024.07.19.602785v1).
 
