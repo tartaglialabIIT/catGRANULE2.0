@@ -7,7 +7,7 @@
 
 
 This repository contains the code needed to reproduce the analysis in the manuscript [Monti*, Fiorentino*, et al, Accurate Predictions of Liquid-Liquid Phase Separating Proteins
-at Single Amino Acid Resolution, biorxiv, 2024](https://www.biorxiv.org/content/10.1101/2024.07.19.602785v1).
+at Single Amino Acid Resolution, Genome Biology, 2025](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-025-03497-7).
 
 Setup a python or a conda virtual environment using the file requirements.txt
 
